@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Hodson's Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s infinite alternate;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        h2, p, ul, li {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .skills, .extracurricular, .achievements, .references {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            animation: moveCircle 15s infinite linear;
+        }
+
+        @keyframes moveCircle {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(100%);
+            }
+        }
+
+        footer {
+            margin-top: 200x;
+            text-align: center;
+            color: #fff;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="shapes">
+        <div class="circle" style="top: 10%; left: 10%; width: 80px; height: 80px;"></div>
+        <div class="circle" style="top: 20%; left: 70%; width: 60px; height: 60px;"></div>
+        <div class="circle" style="top: 50%; left: 30%; width: 100px; height: 100px;"></div>
+        <!-- Add more circles or shapes as desired -->
+    </div>
+
+    <header>
+        <h1>Daniel Hodson</h1>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:danielhodsonschool@gmail.com">danielhodsonschool@gmail.com</a></p>
+            <p>Phone: 0493 576 320</p>
+        </div>
+    </header>
+
+    <section>
+        <h2>Objective</h2>
+        <p>To gain valuable experience and contribute skills in a work environment.</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <p>Hazel Glen College | Year 9</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Quick learner and adaptable to new tasks</li>
+            <li>Advanced computer skills</li>
+            <li>Positive communication skills</li>
+            <li>Working independently while being committed to supporting the team</li>
+        </ul>
+    </section>
+
+    <section class="extracurricular">
+        <h2>Extracurricular Activities</h2>
+        <ul>
+            <li>Club Soccer (6 years)</li>
+            <li>Competitive Swimming (3 years)</li>
+        </ul>
+    </section>
+
+    <section class="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Hazel Glen Year 8: Citizenship Award Nomination</li>
+            <li>Atholl Heights Year 7: [Details not provided]</li>
+        </ul>
+    </section>
+
+    <section class="references">
+        <h2>References</h2>
+        <li>scarpenter@hazelglencollege.com</li>
+
+        <section>
+            <h2>Parent Contact Details</h2>
+
+            <li> Father: Christopher Hodson 0493 468 615</li>
+            <li> Mother: Leanne Hodson      0493 561 271</li>
+        </section>
+
+    </section>
+
+    <footer>
+        &copy; 2024 Daniel Hod
